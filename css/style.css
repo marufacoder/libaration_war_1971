@@ -1,0 +1,128 @@
+ body {
+   overflow: hidden;
+   /* prevent full page scroll */
+
+ }
+
+ .sidebar-left {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 120px;
+   height: 100vh;
+   background: #f8f9fa;
+ }
+
+ .sidebar-right {
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 120px;
+   height: 100vh;
+   background: #f8f9fa;
+ }
+
+ .main-content {
+   margin-left: 120px;
+   margin-right: 120px;
+   height: 100vh;
+   overflow-y: auto;
+   /* only middle scrolls */
+   /* padding: 10px; */
+ }
+
+ /* start nav bar */
+ .nav-item {
+   margin-left: 20px;
+
+ }
+
+ .nav-item a {
+   font-size: 18px;
+   font-weight: 700;
+   color: black;
+   transition: 0.8s ease;
+   padding: 8px;
+   border-radius: 10px;
+ }
+
+ .nav-item a:hover {
+   background-color: rgb(141, 73, 73);
+
+   transform: scale(1.0);
+   color: rgb(132, 240, 132);
+
+ }
+
+ /* end nav bar */
+ .heading_1 {
+   padding: 0px;
+   margin: 0px;
+
+ }
+
+ .text-justify {
+   text-align: justify;
+ }
+
+ .border-anim {
+   position: relative;
+ }
+
+ .border-anim::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   border: 2px solid transparent;
+   background: 
+    linear-gradient(90deg, #1c744f, #1c744f) top left / 2px 0 no-repeat,
+    linear-gradient(90deg, #1c744f, #1c744f) bottom right / 2px 0 no-repeat,
+    linear-gradient(180deg, #1c744f, #1c744f) top right / 0 2px no-repeat,
+    linear-gradient(180deg, #1c744f, #1c744f) bottom left / 0 2px no-repeat;
+   transition: 1.5s ease;
+ }
+
+ .border-anim:hover::before {
+   background-size:
+     100% 2px,
+     100% 2px,
+     2px 100%,
+     2px 100%;
+ }
+
+
+ .border-img-animation {
+   position: relative;
+
+ }
+
+ .border-img-animation::before {
+   content: "";
+   position: absolute;
+   inset: 0;
+   border: 2px solid transparent;
+   background: linear-gradient(180deg, hsl(150, 61%, 27%), #1a530c) top left / 5px 0 no-repeat,
+   linear-gradient(180deg, #c52b04, #c52b04) bottom right / 5px 0 no-repeat,
+   linear-gradient(180deg, #04c54e, #04c554) top right / 0 5px  no-repeat,
+   linear-gradient(180deg, #c52b04, #c52b04) bottom left / 0 5px  no-repeat;
+   transition: .5s ease;
+ }
+
+ .border-img-animation:hover::before {
+
+   background-size:
+    100% 5px,
+  100% 5px,
+  5px 100%,
+  5px 100%;
+ }
+
+ /* @keyframes image-border {
+      0%{
+        border-bottom: 3px solid red;
+      }
+      100%{
+        border-top: 3px solid green;
+      }
+      
+    } */
