@@ -21,7 +21,7 @@
    width: 180px;
    height: 100vh;
    background: #f8f9fa;
-   border: 20px solid red;
+   border: 1px solid rgb(111, 109, 244);
  }
 
  .main-content {
@@ -31,7 +31,7 @@
    /* keep space for right sidebar */
    height: 100vh;
    overflow-y: auto;
-   border: 2px solid red;
+   border: 0px solid red;
  }
 
  /* start nav bar */
@@ -170,18 +170,58 @@
  }
 
  .card {
-   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-   object-fit: cover;
+   /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); */
+   /* object-fit: cover; */
    /* height: 250px; */
+   transition: .5s ease;
+   overflow: hidden;
+ }
+
+ .card:hover {
+   border: 1px solid green;
+   transform: translateY(-5px);
+   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+ }
+
+ .card img {
+   transition: .5s ease;
+ }
+
+ .card:hover img {
+   transform: scale(1.1);
  }
 
  .card-1 {
-   transition: 0.3s ease;
+   transition: 0.5s ease;
 
  }
 
  .card-1:hover {
    transform: scale(1.05);
+ }
+
+ /* .height-modify {
+   height: 100%;
+ } */
+
+ .btn-colr a {
+   background-color: green;
+   color: white;
+ }
+
+ .img-gap {
+   border-radius: 8px;
+   overflow: hidden;
+ }
+
+ .img-gap img {
+   transition: transform 0.5s ease-in-out;
+
+ }
+
+ .img-gap img:hover {
+   transform: scale(1.15);
+
  }
 
  .border-design {
